@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caso Práctico 01</title>
+  </head>
+  <body>
+
+    <section>
+      <form action="caso01.php" method="post">
+        Introduce valor hexadecimal:&nbsp;
+<!-- En el imput hemos incluido varios atributos nuevos
+respecto a las tareas anteriores:
+
+  -Pattern: para validar la información introducida,
+  lo hemos personalizado para que el texto tenga que
+  comenzar por # e ir seguido de 6 carácteres que pueden
+  ser números de 0 a 9 o letras desde aA hasta fF.
+
+  -Placeholder: marca de agua en la caja de entrada
+  texto, que índica el formato admitido.
+
+  -Title: información que acompaña a la ventana emergente
+  de error, cuando se intenta introducir información con
+  un formato diferente al establecido en el Pattern -->
+        <input type="text"
+              pattern="#[a-fA-F0-9]{6}"
+              name="hex"
+              placeholder="#000000"
+              title="(#000000)"
+              id="hex">
+        <input type="submit" name="enviar" value="Convertir">
+      </form>
+    </section>
+
+  </body>
+</html>

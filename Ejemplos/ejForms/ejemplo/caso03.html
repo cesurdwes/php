@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caso Práctico 03</title>
+  </head>
+  <body>
+<!-- Utilizamos el mismo código que en el Caso 01
+puesto que ya habiamos incluido la validación
+mediante Pattern.  -->
+    <section>
+      <form action="caso03.php" method="post">
+        Introduce valor hexadecimal:&nbsp;
+        <input type="text"
+              pattern="#[a-fA-F0-9]{6}"
+              name="hex"
+              placeholder="#000000"
+              title="(#000000)"
+              id="hex">
+        <input type="submit" name="enviar" value="Convertir">
+      </form>
+    </section>
+
+  </body>
+</html>

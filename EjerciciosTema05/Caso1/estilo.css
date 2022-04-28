@@ -1,0 +1,72 @@
+body {
+  margin-left: 15%;
+  margin-right: 15%;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+footer {
+  margin-top: 5%;
+  padding-left: 15px;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+  background: grey;
+}
+
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  height: 50px;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.navegacion {
+  background-color: #DAF7A6;
+  overflow: hidden;
+}
+
+/*Extraemos las propiedades comunes de la barra de navegación*/
+
+.texto_navegacion {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navegacion_izquierda {
+  float: left;
+}
+
+.navegacion_derecha {
+  float: right;
+}
+
+#activo {
+  background-color: #FF0000;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/*Al pasar el ratón cambiamos el estilo*/
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}

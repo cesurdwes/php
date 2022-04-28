@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caso Práctico 04</title>
+  </head>
+  <body>
+
+    <section>
+<!-- Marcamos todos los inputs como Required -->
+      <form id="evaluacion" action="caso04.php" method="post">
+<!-- Añadimos un Pattern en Nombre y Apellidos, que sólo permita
+letras (mayúsculas, minúsculas, acentos y "ñÑ"), con una
+extensión mínima de 2 caracteres y máxima de 25 y 50 respectivamente. -->
+        <table>
+          <tr>
+            <td>*Nombre</td>
+            <td><input type="text" name="nombre" id="nombre"
+              pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{2,25}" required></td>
+          </tr>
+
+          <tr>
+            <td>*Apellidos</td>
+            <td><input type="text" name="apellidos" id="apellidos"
+              pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]{2,50}" required></td>
+          </tr>
+<!-- Para Curso y Ciclo incluimos inputs de tipo Select -->
+          <tr>
+            <td>*Curso</td>
+            <td>
+              <select name="curso" id="curso" required>
+                <option value="1º">Primero</option>
+                <option value="2º">Segundo</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>*Ciclo</td>
+            <td>
+              <select name="ciclo" id="ciclo" required>
+                <option value="DAW">DAW</option>
+                <option value="DAM">DAM</option>
+              </select>
+            </td>
+          </tr>
+<!-- Las calificaciones son de tipo number con un límite minimo de 0
+y máximo de 10 -->
+          <tr>
+            <td>*Calificación PROG</td>
+            <td><input type="number" name="prog" id="prog" min="0" max="10" required></td>
+          </tr>
+
+          <tr>
+            <td>*Calificación ED</td>
+            <td><input type="number" name="ed" id="ed" min="0" max="10" required></td>
+          </tr>
+
+          <tr>
+            <td>*Calificación LLMM</td>
+            <td><input type="number" name="llmm" id="llmm" min="0" max="10" required></td>
+          </tr>
+
+          <tr>
+            <td>*Calificación BBDD</td>
+            <td><input type="number" name="bbdd" id="bbdd" min="0" max="10" required></td>
+          </tr>
+
+          <tr>
+            <td><input type="submit" name="enviar" value="Enviar"></td>
+            <td><small>Los campos marcados con (*) son obligatorios</small></td>
+          </tr>
+
+        </table>
+
+      </form>
+
+    </section>
+
+  </body>
+</html>
